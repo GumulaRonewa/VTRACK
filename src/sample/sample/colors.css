@@ -1,0 +1,33 @@
+.root{
+ -fx-background-color: #243447;
+}
+.button{
+    -fx-background-color: #1DA1F2;
+    -fx-background-radius:5;
+}
+.button:hover{
+           -fx-background-color: blue;
+
+ }
+.start{
+    -fx-background-color: green;
+    -fx-background-radius:5;
+}
+.startbttn{
+    -fx-background-color: green;
+        -fx-background-radius:5;
+}
+.startbttn:hover{
+    -fx-background-color: blue;
+
+}
+.quit{
+    -fx-background-color: red;
+    -fx-background-radius:5;
+}
+.live{
+    -fx-background-color: white;
+}
+.stats{
+      -fx-rotate: -90
+}

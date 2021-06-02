@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1000.0" styleClass="root" stylesheets="@sample/colors.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="choose" layoutX="22.0" layoutY="657.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="25.0" prefWidth="93.0" text="Choose" textFill="#fcfcfc" />
+      <Button fx:id="start" layoutX="127.0" layoutY="657.0" mnemonicParsing="false" onAction="#Process" prefHeight="25.0" prefWidth="93.0" styleClass="startbttn" text="Start" textFill="WHITE" />
+      <Button layoutX="247.0" layoutY="657.0" mnemonicParsing="false" onAction="#Close" prefHeight="25.0" prefWidth="93.0" styleClass="quit" text="Quit" textFill="WHITE" />
+
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="573.0" prefWidth="940.0" styleClass="live">
+         <children>
+            <ImageView fx:id="feed" fitHeight="504.0" fitWidth="904.0" layoutX="12.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="22.0" layoutY="595.0" prefHeight="54.0" prefWidth="932.0" styleClass="live">
+         <children>
+            <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Objects:" wrappingWidth="159.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="object" layoutX="158.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="198.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Circles:" wrappingWidth="143.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="cycle" layoutX="332.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="374.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mean radius:" wrappingWidth="109.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="radius" layoutX="466.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="494.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min radius:" wrappingWidth="109.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="614.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max radius:" wrappingWidth="109.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="radius1" layoutX="574.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="radius11" layoutX="696.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</Pane>
